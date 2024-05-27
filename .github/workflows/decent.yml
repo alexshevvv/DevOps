@@ -15,12 +15,15 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Five tests for binary search using -PYTEST-
+    - name: tests for calculate function using -PYTEST-
       run: |
         pytest ./tests/test_function.py
-    - name: Tests for MY PROJECT using -PYTEST-
+    - name: Tests for main project using -PYTEST-
       run: |
         pytest ./tests/project_tests.py
     - name: Run Pylint with pylintrc configuration
       run: |
         pylint ./project/calculator.py
+    - name: Run docker
+      run: |
+        docker-compose up -d
