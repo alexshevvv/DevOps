@@ -1,4 +1,4 @@
-from tests_function.calculate_function import calculate
+from project.calculate_function import calculate
 import pytest
 
 @pytest.mark.parametrize("expression, expected_result", [

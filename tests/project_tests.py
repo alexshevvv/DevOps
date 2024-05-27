@@ -1,4 +1,4 @@
-from calculator import Calculator
+from project.calculator import Calculator
 import pytest
 
 @pytest.fixture
